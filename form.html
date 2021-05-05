@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+    </head>
+
+    <body>
+        <form action="http://localhost/login.php">
+            <h1>login</h1>
+            <p>아이디: <input type="text" name="id" value="ID"></p>
+            <p>비밀번호: <input type="password" name="pwd" value="PASSWORD"></p>
+            <p>주소: <input type="text" name="address"></p>
+            <p>textarea
+                <textarea cols="50" rows="10">default value</textarea>
+            </p>
+        </form>
+
+        <form>
+            <h1>색상</h1>
+            <select name="color">
+            <option value="red">Red</option>
+            <option value="black">Black</option>
+            <option value="blue">blue</option>
+            </select>
+
+            <h1>색상2(다중선택)</h1>
+            <select name="color2" multiple>
+            <option value="red">Red</option>
+            <option value="black">Black</option>
+            <option value="blue">blue</option>
+            </select>
+            <input type="submit">
+        </form>
+
+        <form action="http://localhost/order.php">
+            <p>
+                <h1>색상</h1>
+                붉은색: <input type="radio" name="color" value="red">
+                검은색: <input type="radio" name="color" value="black" checked>
+                파란색: <input type="radio" name="color" value="blue">
+            </p>
+            <p>
+                <h1>사이즈(다중선택)</h1>
+                95: <input type="checkbox" name="size" value="95">
+                100: <input type="checkbox" name="size" value="100" checked>
+                105: <input type="checkbox" name="size" val ue="105" checked>
+            </p>
+            <input type="submit">
+        </form>
+
+        <form>
+            <input action="http://localhost/form.php">
+                <input type="submit" value="전송">
+                <input type="button" value="버튼">
+                <input type="reset">
+
+            <input type="http:/.localhost/hidden.php">
+                <input type="text" name="id">
+                <input type="hidden" name="hide" value="egoing">
+                <input type="submit">
+        </form>
+
+        <form action="">
+            <p>
+                <label for="id_txt">text</label>: 
+                <input id="id_txt" type="text" name="id" value="degault value">
+            </p>
+            <p>
+                <label for="password_txt">password</label>:
+                <input id="password_txt" type="password" name="pwd" value="degault value">
+            </p>
+            <p>
+                <label>textarea:
+                <textarea cols="50" rows="2"></textarea>default value</textarea></textarea>
+                </label> 
+            </p>
+            <h1>color2</h1>
+            <p>
+                <label>
+                    <input type="checkbox" name="color" value="red"> 붉은색
+                </label>
+                <label>
+                    <input id="color_blue" type="checkbox" name="color" value="blue"> 파란색
+                </label>
+            </p>
+        </form>
+
+        <form>
+            <input action="http://localhost/method.php" method="post">
+            <input type="text" name="id">
+            <input type="password" name="pwd">
+            <input type="submit">
+        </form>
+
+        <form action="html://localhost/upload.php" method="post" enctype="multipart/form-data">
+            <input type="file">
+            <input type="submit">
+        </form>
+    </body>
+</html>
